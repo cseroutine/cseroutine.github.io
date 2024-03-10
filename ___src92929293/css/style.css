@@ -1,0 +1,113 @@
+.sheet-summary {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    height: 90vh;
+    display: block;
+}
+
+.load-text {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.head-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #1f3864;
+}
+
+.food-emoji {
+    font-size: 4em;
+    animation: food-spin 1s linear infinite;
+    -webkit-animation: food-spin 1s linear infinite; /* Safari */
+}
+
+/* Safari */
+@-webkit-keyframes food-spin {
+    0% {
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes food-spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.loader {
+    margin: auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: loader-spin 3s linear infinite; /* Safari */
+    animation: loader-spin 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Safari */
+@-webkit-keyframes loader-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.blinking-date {
+    animation: blink 1s ease-in-out infinite;
+    -webkit-animation: blink 1s ease-in-out infinite; /* Safari */
+}
+
+@keyframes blink {
+    0% {
+        background-color: #d9e2f3;
+    }
+    50% {
+        background-color: #ff5e5e;
+    }
+    100% {
+        background-color: #d9e2f3;
+    }
+}
+
+/* Safari */
+@-webkit-keyframes blink {
+    0% {
+        background-color: #d9e2f3;
+    }
+    50% {
+        background-color: #ff5e5e;
+    }
+    100% {
+        background-color: #d9e2f3;
+    }
+}
